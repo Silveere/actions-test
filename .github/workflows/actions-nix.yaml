@@ -10,4 +10,4 @@ jobs:
       - uses: DeterminateSystems/magic-nix-cache-action@main
       - uses: DeterminateSystems/flake-checker-action@main
 
-      - run: 'nix develop .#build --command "hello; neofetch"'
+      - run: 'nix develop .#build --command bash -c "hello; neofetch"'

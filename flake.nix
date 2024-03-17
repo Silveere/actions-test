@@ -15,6 +15,7 @@
       };
       build = pkgs.mkShell {
         buildInputs = with pkgs; [
+          bash
           hello
           neofetch
         ];
