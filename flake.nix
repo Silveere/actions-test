@@ -13,6 +13,12 @@
           (python311.withPackages (ps: with ps; [ pyyaml ptpython ]))
         ];
       };
+      build = pkgs.mkShell {
+        buildInputs = with pkgs; [
+          hello
+          neofetch
+        ];
+      };
     });
   };
 }
